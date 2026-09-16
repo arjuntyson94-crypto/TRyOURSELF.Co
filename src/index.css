@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #082F49;
+    --accent-emerald: #10B981;
+    --accent-yellow: #EAB308;
+  }
+
+  body {
+    background-color: #082F49;
+    color: #f1f5f9;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre, .font-mono {
+    font-family: "Fira Code", monospace;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #061d2f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0c4a6e;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* KaTeX font & alignment tweaks */
+.katex {
+  font-size: 1.05em;
+  text-rendering: geometricPrecision;
+}
+
+.katex-display {
+  margin: 0.5em 0 !important;
+}
+
+/* Print & PDF Export Styling */
+@media screen {
+  .only-print {
+    display: none !important;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .only-print {
+    display: block !important;
+  }
+
+  /* Notebook card styling on print */
+  .notebook-entry-card {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 1.5rem !important;
+    border-radius: 8px !important;
+  }
+
+  .notebook-entry-card * {
+    color: #0f172a !important;
+    border-color: #e2e8f0 !important;
+    background-color: transparent !important;
+  }
+
+  .notebook-entry-card img {
+    border: 1px solid #94a3b8 !important;
+    filter: none !important;
+  }
+
+  @page {
+    margin: 1.5cm;
+    size: A4 portrait;
+  }
+}

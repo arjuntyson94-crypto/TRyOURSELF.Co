@@ -1,0 +1,6 @@
+{
+  "name": "TRyOURSELF",
+  "description": "Interactive STEM solver and CBSE Class 11 & 12 revision notebook featuring a 3-step pedagogical solver, HTML5 drawing scratchpad with STEM symbols, comprehensive formula revision library, and local storage with PDF export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

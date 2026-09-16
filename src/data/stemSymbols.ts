@@ -1,0 +1,50 @@
+import { StemSymbol } from "../types";
+
+export const STEM_SYMBOLS: StemSymbol[] = [
+  // Math symbols
+  { symbol: "π", name: "pi", category: "Math", latexEquivalent: "\\pi" },
+  { symbol: "θ", name: "theta", category: "Math", latexEquivalent: "\\theta" },
+  { symbol: "φ", name: "phi", category: "Math", latexEquivalent: "\\phi" },
+  { symbol: "√", name: "sqrt", category: "Math", latexEquivalent: "\\sqrt{}" },
+  { symbol: "∫", name: "integral", category: "Math", latexEquivalent: "\\int" },
+  { symbol: "∑", name: "summation", category: "Math", latexEquivalent: "\\sum" },
+  { symbol: "∂", name: "partial", category: "Math", latexEquivalent: "\\partial" },
+  { symbol: "Δ", name: "delta", category: "Math", latexEquivalent: "\\Delta" },
+  { symbol: "∞", name: "infinity", category: "Math", latexEquivalent: "\\infty" },
+  { symbol: "±", name: "plus-minus", category: "Math", latexEquivalent: "\\pm" },
+  { symbol: "≤", name: "less-or-equal", category: "Math", latexEquivalent: "\\le" },
+  { symbol: "≥", name: "greater-or-equal", category: "Math", latexEquivalent: "\\ge" },
+  { symbol: "≠", name: "not-equal", category: "Math", latexEquivalent: "\\ne" },
+  { symbol: "≈", name: "approx", category: "Math", latexEquivalent: "\\approx" },
+  { symbol: "×", name: "multiply", category: "Math", latexEquivalent: "\\times" },
+  { symbol: "÷", name: "divide", category: "Math", latexEquivalent: "\\div" },
+
+  // Physics symbols
+  { symbol: "F⃗", name: "Force Vector", category: "Physics", latexEquivalent: "\\vec{F}" },
+  { symbol: "v⃗", name: "Velocity Vector", category: "Physics", latexEquivalent: "\\vec{v}" },
+  { symbol: "a⃗", name: "Acceleration Vector", category: "Physics", latexEquivalent: "\\vec{a}" },
+  { symbol: "λ", name: "Wavelength (lambda)", category: "Physics", latexEquivalent: "\\lambda" },
+  { symbol: "μ", name: "Micro / Friction (mu)", category: "Physics", latexEquivalent: "\\mu" },
+  { symbol: "ω", name: "Angular Frequency (omega)", category: "Physics", latexEquivalent: "\\omega" },
+  { symbol: "σ", name: "Surface Charge / Stress (sigma)", category: "Physics", latexEquivalent: "\\sigma" },
+  { symbol: "ρ", name: "Density / Resistivity (rho)", category: "Physics", latexEquivalent: "\\rho" },
+  { symbol: "τ", name: "Torque / Relaxation (tau)", category: "Physics", latexEquivalent: "\\tau" },
+  { symbol: "ε₀", name: "Permittivity (epsilon_0)", category: "Physics", latexEquivalent: "\\varepsilon_0" },
+  { symbol: "μ₀", name: "Permeability (mu_0)", category: "Physics", latexEquivalent: "\\mu_0" },
+  { symbol: "Ω", name: "Ohm (resistance)", category: "Physics", latexEquivalent: "\\Omega" },
+  { symbol: "ħ", name: "Reduced Planck (h-bar)", category: "Physics", latexEquivalent: "\\hbar" },
+
+  // Chemistry symbols
+  { symbol: "⇌", name: "Reversible Equilibrium", category: "Chemistry", latexEquivalent: "\\rightleftharpoons" },
+  { symbol: "→", name: "Reaction Yields", category: "Chemistry", latexEquivalent: "\\to" },
+  { symbol: "ΔH", name: "Enthalpy Change", category: "Chemistry", latexEquivalent: "\\Delta H" },
+  { symbol: "e⁻", name: "Electron", category: "Chemistry", latexEquivalent: "e^-" },
+  { symbol: "H⁺", name: "Proton", category: "Chemistry", latexEquivalent: "H^+" },
+  { symbol: "OH⁻", name: "Hydroxide", category: "Chemistry", latexEquivalent: "OH^-" },
+  { symbol: "α", name: "Alpha particle / Degree", category: "Chemistry", latexEquivalent: "\\alpha" },
+  { symbol: "β", name: "Beta particle", category: "Chemistry", latexEquivalent: "\\beta" },
+  { symbol: "γ", name: "Gamma radiation", category: "Chemistry", latexEquivalent: "\\gamma" },
+  { symbol: "Kₑq", name: "Equilibrium Constant", category: "Chemistry", latexEquivalent: "K_{eq}" },
+  { symbol: "pH", name: "Acidity Index", category: "Chemistry", latexEquivalent: "\\text{pH}" },
+  { symbol: "Kₛₚ", name: "Solubility Product", category: "Chemistry", latexEquivalent: "K_{sp}" },
+];
